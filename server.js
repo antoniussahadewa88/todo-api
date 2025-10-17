@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config(); // kalau pakai .env (bisa dilewati kalau Render nanti pakai ENV langsung)
 const sequelize = require('./config/database');
+const Todo = require('./models/Todo');
 const todoRoutes = require('./routes/todos');
 
 const app = express();
